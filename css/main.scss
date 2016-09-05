@@ -1,0 +1,36 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$font-size-base: 15px;
+$font-family-sans-serif: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: "Droid Serif", $font-family-sans-serif;
+$font-family-base: $font-family-serif;
+
+$brand-primary: #448234;
+
+$text-color: black;
+$body-bg-color: white;
+$heading-color: white;
+$heading-bg-color: black;
+
+$standard-margin: 20px;
+
+$navbar-default-color: $heading-color;
+$navbar-default-link-color: $heading-color;
+$navbar-default-link-active-color: $heading-color;
+$navbar-default-link-hover-color: $heading-color;
+$navbar-default-link-hover-bg: darken($heading-bg-color, 5%);
+$navbar-default-bg: $heading-bg-color;
+$navbar-margin-bottom: 0;
+$navbar-border-radius: 0;
+
+$body-bg: $body-bg-color;
+
+$btn-default-bg: #ffaa61;
+
+@import "bootstrap";
+@import "base";
+@import "layout";
+@import "icon-fonts";

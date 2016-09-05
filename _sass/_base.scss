@@ -1,0 +1,89 @@
+.navbar {
+    h1 {
+        font-size: 20px;
+        font-weight: normal;
+        line-height: $line-height-computed;
+    }
+
+    .navbar-toggle {
+        background-color: $btn-default-bg;
+        border-style: none;
+    }
+
+    .navbar-toggle:hover {
+        background-color: darken($btn-default-bg, 10%);
+    }
+}
+
+.navbar-brand {
+    img {
+        border: 3px solid $heading-color;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-top: 0;
+    }
+}
+
+#navbar-dropdown {
+    background-color: $heading-bg-color;
+
+    a {
+        background-color: $heading-bg-color;
+        color: $heading-color;
+        border-radius: 0;
+    }
+
+    a:hover {
+        background-color: $navbar-default-link-hover-bg;
+    }
+}
+
+.pager li > a {
+    background-color: $btn-default-bg;
+    border-color: $btn-default-border;
+}
+
+.pager li > a:hover {
+    background-color: darken($btn-default-bg, 10%);
+    border-color: darken($btn-default-border, 12%);
+}
+
+article {
+    header {
+        color: inherit;
+        background-color: inherit;
+        border-bottom: 3px solid $heading-bg-color;
+    }
+
+    h1 {
+        border-style: none;
+    }
+}
+
+time {
+    font-style: italic;
+    font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.video {
+    max-width: 650px;
+    margin-top: $standard-margin;
+    margin-bottom: $standard-margin;
+}
