@@ -4,9 +4,11 @@ layout: page
 
 # Iowa City SURJ Chapter
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor nibh magna, eu consequat magna viverra eget. Quisque eu eleifend odio, ut auctor dui. Duis accumsan eros massa, in malesuada sapien commodo et. Donec pellentesque malesuada ipsum. Quisque sit amet tincidunt tortor. Donec ut dolor vel augue mollis mollis quis eu enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+ICSURJ is a local chapter of Showing Up For Racial Justice, a national network of groups and individuals organizing white people for racial justice.
 
-Proin non venenatis enim, vitae cursus quam. Maecenas tellus augue, imperdiet quis cursus nec, venenatis et neque. Pellentesque orci sapien, porttitor eget dui nec, volutpat ultricies enim. Duis commodo vitae felis efficitur rhoncus. Maecenas porta rutrum mauris, sed condimentum odio egestas a. Duis laoreet eleifend maximus. Vestibulum nec justo suscipit, ullamcorper eros et, malesuada ante. Aenean pretium pulvinar sagittis. Donec lobortis vehicula odio, quis efficitur felis dictum sed. Ut consequat justo ac nulla feugiat, ac euismod justo fermentum.
+Formed in the summer of 2016, the Iowa City SURJ chapter hopes to encourage and support white people to act as part of a multi-racial majority for justice with passion and accountability. We are endeavoring to be part of this work here in Johnson County through community organizing, mobilizing, education, and partnerships with other racial justice groups locally and nationally.
+
+ ICSURJ also seeks to provide a space to build relationships, skills and political analysis to act for change.
 
 # About SURJ
 
