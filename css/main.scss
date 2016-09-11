@@ -4,9 +4,9 @@
 @charset "utf-8";
 
 $font-size-base: 15px;
-$font-family-sans-serif: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif: "Droid Serif", $font-family-sans-serif;
-$font-family-base: $font-family-serif;
+$body-font: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$title-font: "Oswald", $body-font;
+$font-family-base: $body-font;
 
 $brand-primary: #448234;
 
@@ -14,6 +14,7 @@ $text-color: black;
 $body-bg-color: white;
 $heading-color: white;
 $heading-bg-color: black;
+$heading-hover-bg-color: #53cfd7;
 
 $standard-margin: 20px;
 
@@ -21,7 +22,7 @@ $navbar-default-color: $heading-color;
 $navbar-default-link-color: $heading-color;
 $navbar-default-link-active-color: $heading-color;
 $navbar-default-link-hover-color: $heading-color;
-$navbar-default-link-hover-bg: darken($heading-bg-color, 5%);
+$navbar-default-link-hover-bg: $heading-hover-bg-color;
 $navbar-default-bg: $heading-bg-color;
 $navbar-margin-bottom: 0;
 $navbar-border-radius: 0;

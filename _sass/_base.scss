@@ -1,8 +1,6 @@
-.navbar {
-    h1 {
-        font-size: 20px;
-        font-weight: normal;
-        line-height: $line-height-computed;
+nav {
+    a:hover {
+        text-decoration: none;
     }
 
     .navbar-toggle {
@@ -15,26 +13,23 @@
     }
 }
 
-.navbar-brand {
-    img {
-        border: 3px solid $heading-color;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-top: 0;
-    }
-}
-
-#navbar-dropdown {
+.nav-links {
     background-color: $heading-bg-color;
+    color: $heading-color;
+    font-family: $title-font;
+    text-transform: uppercase;
 
-    a {
-        background-color: $heading-bg-color;
-        color: $heading-color;
-        border-radius: 0;
-    }
+    li {
+        a {
+            background-color: $heading-bg-color;
+            color: $heading-color;
+            border-radius: 0;
+        }
 
-    a:hover {
-        background-color: $navbar-default-link-hover-bg;
+        a:hover {
+            color: $heading-bg-color;
+            background-color: $navbar-default-link-hover-bg;
+        }
     }
 }
 
@@ -66,7 +61,7 @@ time {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $font-family-sans-serif;
+    font-family: $title-font;
     text-transform: uppercase;
 }
 
