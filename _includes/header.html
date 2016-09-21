@@ -15,10 +15,10 @@
                         <img alt="Showing Up for Racial Justice" src="{{site.baseurl}}/images/surj.jpg"
                          width="187" height="100" />
                     </a>
-                    <h1>{{site.title}}</h1>
+                    <h1>Iowa City</h1>
                 </div>
             </div>
-            <div class="row nav-links">
+            <div id="navbar-dropdown" class="row nav-links collapse">
                 <div class="col-md-10 col-md-offset-1">
                     <ul class="nav navbar-nav">
                         <li>
@@ -40,13 +40,4 @@
             </div>
         </div>
     </nav>
-    <div id="navbar-dropdown" class="list-group collapse">
-        {% for my_page in site.pages %}
-            {% if my_page.title %}
-                <a class="list-group-item" href="{{my_page.url | prepend: site.baseurl}}">
-                    {{my_page.title}}
-                </a>
-            {% endif %}
-        {% endfor %}
-    </div>
 </header>

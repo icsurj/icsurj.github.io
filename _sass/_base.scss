@@ -1,15 +1,30 @@
 nav {
+    h1 {
+        font-size: 40px;
+    }
+
     a:hover {
         text-decoration: none;
     }
 
     .navbar-toggle {
-        background-color: $btn-default-bg;
+        background-color: $body-bg-color;
         border-style: none;
+
+        .icon-bar {
+            background-color: $text-color;
+            height: 3px;
+        }
     }
 
     .navbar-toggle:hover {
-        background-color: darken($btn-default-bg, 10%);
+        background-color: darken($body-bg-color, 10%);
+    }
+}
+
+.nav-title {
+    @media (max-width: $screen-xs-max) {
+        border-bottom: 3px solid $text-color;
     }
 }
 
