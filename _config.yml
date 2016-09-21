@@ -9,6 +9,10 @@
 title: Iowa City SURJ
 description: > # this means to ignore newlines until "baseurl:"
 
+facebook-url: https://www.facebook.com/ICSURJ/
+twitter-url: https://twitter.com/icsurj
+email: icsurj@gmail.com
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://icsurj.org" # the base hostname & protocol for your site
 permalink: /news/:year/:title/

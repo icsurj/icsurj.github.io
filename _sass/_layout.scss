@@ -6,6 +6,20 @@ nav {
         position: relative;
         top: 24px;
     }
+
+    .btn-circle {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        line-height: 34px;
+        margin-right: 5px;
+    }
+}
+
+.contact-links {
+    float: right;
+    position: relative;
+    top: 38px;
 }
 
 .navbar-toggle {
