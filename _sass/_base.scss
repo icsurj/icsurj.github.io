@@ -1,6 +1,10 @@
 nav {
     h1 {
         font-size: 40px;
+
+        @media (max-width: $screen-xs-max) {
+            font-size: 35px;
+        }
     }
 
     a:hover {
@@ -25,6 +29,7 @@ nav {
         @media (max-width: $screen-xs-max) {
             padding-left: 0;
             padding-right: 0;
+            overflow-x: hidden;
         }
     }
 }
