@@ -20,11 +20,33 @@ nav {
     .navbar-toggle:hover {
         background-color: darken($body-bg-color, 10%);
     }
+
+    .container-fluid {
+        @media (max-width: $screen-xs-max) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+.navbar-nav {
+    @media (max-width: $screen-xs-max) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 .nav-title {
     @media (max-width: $screen-xs-max) {
         border-bottom: 3px solid $text-color;
+    }
+}
+
+.contact-links {
+    @media (max-width: $screen-xs-max) {
+        border-top: 3px solid $text-color;
+        margin-top: $standard-margin;
+        padding-top: $standard-margin / 2;
     }
 }
 

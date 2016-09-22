@@ -20,11 +20,19 @@ nav {
     float: right;
     position: relative;
     top: 38px;
+
+    @media (max-width: $screen-xs-max) {
+        display: block;
+        position: static;
+        float: none;
+        text-align: center;
+    }
 }
 
 .navbar-toggle {
-    margin-top: 0;
-    margin-right: 0;
+    position: absolute;
+    margin: 5px;
+    z-index: 1;
 }
 
 #navbar-dropdown {
@@ -37,6 +45,17 @@ nav {
 .nav-title {
     padding-top: $standard-margin;
     padding-bottom: $standard-margin;
+
+    @media (max-width: $screen-xs-max) {
+        padding-bottom: 10px;
+    }
+
+    .title {
+        @media (max-width: $screen-xs-max) {
+            display: block;
+            text-align: center;
+        }
+    }
 }
 
 h1 {
