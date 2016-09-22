@@ -21,6 +21,7 @@ $standard-margin: 20px;
 $navbar-default-color: $heading-color;
 $navbar-default-link-color: $heading-color;
 $navbar-default-link-active-color: $heading-color;
+$navbar-default-link-active-bg: $heading-hover-bg-color;
 $navbar-default-link-hover-color: $heading-color;
 $navbar-default-link-hover-bg: $heading-hover-bg-color;
 $navbar-default-bg: $heading-bg-color;
@@ -30,6 +31,7 @@ $navbar-border-radius: 0;
 $body-bg: $body-bg-color;
 
 $btn-default-bg: #ffaa61;
+$btn-default-color: $body-bg-color;
 
 @import "bootstrap";
 @import "base";

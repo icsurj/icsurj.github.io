@@ -63,7 +63,7 @@ nav {
             border-radius: 0;
         }
 
-        a:hover {
+        a:hover, a:focus {
             color: $heading-bg-color;
             background-color: $navbar-default-link-hover-bg;
         }
@@ -112,6 +112,18 @@ h2 {
 
 h3 {
     font-size: 20px;
+}
+
+.btn-default {
+    font-family: $title-font;
+    font-size: 17px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+}
+
+.btn-default:hover, .btn-default:focus {
+    background-color: $heading-hover-bg-color;
 }
 
 .btn-circle {
