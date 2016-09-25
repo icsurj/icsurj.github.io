@@ -1,0 +1,49 @@
+<div>
+    <h2>Community Organizations</h2>
+    <ul class="list-unstyled">
+        {% for organization in site.local-organizations %}
+            {% unless organization.university-affiliated %}
+                <li>
+                    <h3>{{organization.title}}</h3>
+                    <div>{{organization.content}}</div>
+                    <div>
+                        {% if organization.website %}
+                            <a href="{{organization.website}}" target="_blank" class="btn btn-circle">
+                                <span class="icon-globe"></span>
+                            </a>
+                        {% endif %}
+                        {% if organization.facebook %}
+                            <a href="{{organization.facebook}}" target="_blank" class="btn btn-circle">
+                                <span class="icon-facebook"></span>
+                            </a>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endunless %}
+        {% endfor %}
+    </ul>
+
+    <h2>University-Affiliated Organizations</h2>
+    <ul class="list-unstyled">
+        {% for organization in site.local-organizations %}
+            {% if organization.university-affiliated %}
+                <li>
+                    <h3>{{organization.title}}</h3>
+                    <div>{{organization.content}}</div>
+                    <div>
+                        {% if organization.website %}
+                            <a href="{{organization.website}}" target="_blank" class="btn btn-circle">
+                                <span class="icon-globe"></span>
+                            </a>
+                        {% endif %}
+                        {% if organization.facebook %}
+                            <a href="{{organization.facebook}}" target="_blank" class="btn btn-circle">
+                                <span class="icon-facebook"></span>
+                            </a>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
