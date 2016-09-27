@@ -96,8 +96,12 @@ article {
         border-style: none;
     }
 
-    ul.list-unstyled li {
+    ul.list-unstyled > li {
         background-color: $list-item-bg-color;
+
+        ul {
+            list-style-type: disc;
+        }
     }
 }
 
