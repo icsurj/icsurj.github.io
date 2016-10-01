@@ -35,6 +35,7 @@ $btn-default-bg: #ffaa61;
 $btn-default-color: $body-bg-color;
 
 @import "bootstrap";
+@import "icon-fonts";
+@import "fullcalendar";
 @import "base";
 @import "layout";
-@import "icon-fonts";

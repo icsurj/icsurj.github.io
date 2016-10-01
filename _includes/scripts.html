@@ -1,2 +1,20 @@
 <script src="{{"/scripts/jquery-2.2.4.min.js" | prepend: site.baseurl}}"></script>
 <script src="{{"/scripts/bootstrap.min.js" | prepend: site.baseurl}}"></script>
+
+{% if page.title == "Events" %}
+    <script src="{{"/scripts/moment.min.js" | prepend: site.baseurl}}"></script>
+    <script src="{{"/scripts/fullcalendar.min.js" | prepend: site.baseurl}}"></script>
+    <script src="{{"/scripts/gcal.js" | prepend: site.baseurl}}"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#calendar').fullCalendar({
+                googleCalendarApiKey: '{{site.calendar-api-key}}',
+                events: {
+                    googleCalendarId: '{{site.calendar-id}}',
+                },
+                titleFormat: 'MMM YYYY'
+            });
+        });
+    </script>
+{% endif %}

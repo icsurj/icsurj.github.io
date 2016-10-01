@@ -23,3 +23,7 @@ collections:
 # Build settings
 markdown: kramdown
 timezone: America/Central
+
+# Calendar settings
+calendar-api-key: AIzaSyD8omfgUEOnuqN7XSt5jORSwxO20nHtscg
+calendar-id: icsurj@gmail.com

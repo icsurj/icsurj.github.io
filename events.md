@@ -5,4 +5,4 @@ title: Events
 
 # Events
 
-Under construction.
+<div id="calendar"></div>

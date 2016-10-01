@@ -155,3 +155,22 @@ h3 {
     margin-top: $standard-margin;
     margin-bottom: $standard-margin;
 }
+
+.fc-scroller[style] {
+    height: auto !important;
+}
+
+.fc-event {
+    background-color: $text-color;
+    border-color: $text-color;
+}
+
+.fc-event:hover, .fc-event:focus {
+    background-color: $heading-hover-bg-color;
+    border-color: $heading-hover-bg-color;
+    color: $text-color;
+}
+
+.fc-state-hover {
+    background-position: 0% 0%;
+}
