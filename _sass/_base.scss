@@ -146,12 +146,17 @@ h3 {
         background-image: none;
     }
 
+    .fc-button:hover, .fc-button:focus {
+        background-color: $heading-hover-bg-color;
+    }
+
     .fc-state-disabled {
         cursor: not-allowed;
+        background-color: $btn-default-bg !important;
     }
 }
 
-.btn-default:hover, .btn-default:focus {
+.btn:hover, .btn:focus {
     background-color: $heading-hover-bg-color;
 }
 
@@ -164,7 +169,6 @@ h3 {
 }
 
 .btn-circle:hover, .btn-circle:focus {
-    background-color: $heading-hover-bg-color;
     color: $text-color;
 }
 
