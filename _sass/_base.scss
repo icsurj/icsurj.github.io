@@ -131,12 +131,24 @@ h3 {
     font-size: 20px;
 }
 
-.btn {
+.btn, .fc-button {
     font-family: $title-font;
     font-size: 17px;
     text-transform: uppercase;
     border: none;
     border-radius: 0;
+}
+
+#calendar {
+    .fc-button {
+        border-radius: 0;
+        background-color: $btn-default-bg;
+        background-image: none;
+    }
+
+    .fc-state-disabled {
+        cursor: not-allowed;
+    }
 }
 
 .btn-default:hover, .btn-default:focus {
