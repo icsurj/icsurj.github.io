@@ -105,6 +105,10 @@ article {
     }
 }
 
+a:hover, a:focus {
+    color: $brand-primary;
+}
+
 time {
     font-style: italic;
     font-size: 12px;
@@ -127,7 +131,7 @@ h3 {
     font-size: 20px;
 }
 
-.btn-default {
+.btn {
     font-family: $title-font;
     font-size: 17px;
     text-transform: uppercase;
@@ -143,6 +147,8 @@ h3 {
     border-radius: 50%;
     background-color: $text-color;
     color: $body-bg-color;
+    font-family: $body-font;
+    border: 1px solid transparent;
 }
 
 .btn-circle:hover, .btn-circle:focus {
@@ -156,16 +162,38 @@ h3 {
     margin-bottom: $standard-margin;
 }
 
+.calendar-key-box.surj-key {
+    background-color: $text-color;
+}
+
+.calendar-key-box.other-key {
+    background-color: $heading-hover-bg-color;
+}
+
 .fc-scroller[style] {
     height: auto !important;
 }
 
 .fc-event {
-    background-color: $text-color;
-    border-color: $text-color;
+    background-color: $heading-hover-bg-color;
+    border-color: $heading-hover-bg-color;
+    color: $text-color;
 }
 
 .fc-event:hover, .fc-event:focus {
+    background-color: darken($heading-hover-bg-color, 10%);
+    border-color: darken($heading-hover-bg-color, 10%);
+    color: $text-color;
+    text-decoration: none;
+}
+
+.surj-event {
+    background-color: $text-color;
+    border-color: $text-color;
+    color: $body-bg-color;
+}
+
+.surj-event:hover, .surj-event:focus {
     background-color: $heading-hover-bg-color;
     border-color: $heading-hover-bg-color;
     color: $text-color;
@@ -173,4 +201,12 @@ h3 {
 
 .fc-state-hover {
     background-position: 0% 0%;
+}
+
+.fc-today {
+    background-color: $list-item-bg-color !important;
+}
+
+.modal h2 {
+    font-size: 17px;
 }

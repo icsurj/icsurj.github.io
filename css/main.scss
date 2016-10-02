@@ -8,7 +8,7 @@ $body-font: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $title-font: "Oswald", $body-font;
 $font-family-base: $body-font;
 
-$brand-primary: #448234;
+$brand-primary: #11a5ac;
 
 $text-color: black;
 $body-bg-color: white;
@@ -31,8 +31,10 @@ $navbar-border-radius: 0;
 
 $body-bg: $body-bg-color;
 
-$btn-default-bg: #ffaa61;
-$btn-default-color: $body-bg-color;
+$btn-default-bg: #ccc;
+$btn-default-color: #333333;
+$btn-primary-bg: #ffaa61;
+$btn-primary-color: $body-bg-color;
 
 @import "bootstrap";
 @import "icon-fonts";

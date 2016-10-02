@@ -5,4 +5,4 @@ title: Events
 
 # Events
 
-<div id="calendar"></div>
+{% include calendar.html %}

@@ -26,4 +26,5 @@ timezone: America/Central
 
 # Calendar settings
 calendar-api-key: AIzaSyD8omfgUEOnuqN7XSt5jORSwxO20nHtscg
-calendar-id: icsurj@gmail.com
+surj-events-calendar-id: icsurj@gmail.com
+other-events-calendar-id: td1ria9ad91sh327a4lu4vmpi8@group.calendar.google.com

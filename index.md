@@ -18,4 +18,4 @@ We work to connect people across the country while supporting and collaborating 
 
 We envision a society where we struggle together with love, for justice, human dignity and a sustainable world.
 
-[SURJ National Website](http://www.showingupforracialjustice.org/){: class="btn btn-default" target="_blank"}
+[SURJ National Website](http://www.showingupforracialjustice.org/){: class="btn btn-primary" target="_blank"}

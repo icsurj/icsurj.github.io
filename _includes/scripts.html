@@ -9,12 +9,63 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#calendar').fullCalendar({
+                titleFormat: 'MMM YYYY',
                 googleCalendarApiKey: '{{site.calendar-api-key}}',
-                events: {
-                    googleCalendarId: '{{site.calendar-id}}',
-                },
-                titleFormat: 'MMM YYYY'
+                eventSources: [
+                    {
+                        googleCalendarId: '{{site.surj-events-calendar-id}}',
+                        className: 'surj-event'
+                    },
+                    {
+                        googleCalendarId: '{{site.other-events-calendar-id}}'
+                    }
+                ],
+                eventClick: function(event) {
+                    // opens events in a popup window
+                    $('#eventModalLabel').text(event.title);
+                    $('#eventModalBody').html(function() {
+                        var location = '';
+                        var startTime = '';
+                        var description = '';
+
+                        if (event.location) {
+                            location = '<h2>Location</h2>';
+                            location += '<p><a href="https://www.google.com/maps/place/' + event.location +
+                                '" target="_blank">' + event.location + '</a></p>';
+                        }
+                        if (event.start) {
+                            startTime = '<h2>Start Time</h2>';
+                            startTime += '<p>' + event.start.format("MMM DD, YYYY [at] h:mm A") + '</p>';
+                        }
+                        if (event.description) {
+                            description = '<h2>Description</h2>';
+                            description += addParagraphs(makeUrlsIntoLinks(event.description));
+                        }
+
+                        return location + startTime + description;
+                    });
+                    $('#eventModal').modal('show');
+                    return false;
+                }
             });
         });
+
+        function addParagraphs(text) {
+            var paragraphs = text.split(/\r\n|\r|\n/g);
+            var output = '';
+
+            paragraphs.forEach(function (paragraph) {
+                if (paragraph.trim() !== '') {
+                    output += '<p>' + paragraph + '</p>';
+                }
+            });
+
+            return output;
+        }
+
+        function makeUrlsIntoLinks(text) {
+            return text.replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig,
+                '<a href="$&" target="_blank">$&</a>');
+        }
     </script>
 {% endif %}
