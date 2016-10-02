@@ -34,16 +34,12 @@
             <div id="navbar-dropdown" class="row nav-links collapse">
                 <div class="col-md-10 col-md-offset-1">
                     <ul class="nav navbar-nav">
-                        <li>
-                            <a class="page-link" href="{{site.baseurl}}/">
-                                About Us
-                            </a>
-                        </li>
-                        {% for my_page in site.pages %}
-                            {% if my_page.title %}
+                        {% assign sorted_pages = site.pages | sort: "title" %}
+                        {% for page in sorted_pages %}
+                            {% if page.title %}
                                 <li>
-                                    <a class="page-link" href="{{my_page.url | prepend: site.baseurl}}">
-                                        {{my_page.title}}
+                                    <a class="page-link" href="{{page.url | prepend: site.baseurl}}">
+                                        {{page.title}}
                                     </a>
                                 </li>
                             {% endif %}
