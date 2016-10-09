@@ -182,6 +182,10 @@ h3 {
     background-color: $text-color;
 }
 
+.calendar-key-box.surj-action-key {
+    background-color: $action-bg-color;
+}
+
 .calendar-key-box.other-key {
     background-color: $heading-hover-bg-color;
 }
@@ -206,6 +210,12 @@ h3 {
 .surj-event {
     background-color: $text-color;
     border-color: $text-color;
+    color: $body-bg-color;
+}
+
+.surj-action-event {
+    background-color: $action-bg-color;
+    border-color: $action-bg-color;
     color: $body-bg-color;
 }
 
