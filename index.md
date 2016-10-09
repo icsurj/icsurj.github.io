@@ -5,7 +5,7 @@ title: About Us
 
 # Iowa City SURJ Chapter
 
-ICSURJ is a local chapter of Showing Up for Racial Justice, a national network of groups and individuals organizing white people for racial justice. While ICSURJ is based in Iowa City, it encompasses surrounding municipalities in Johnson and Linn counties, including Coralville, North Liberty, and Cedar Rapids.
+IC SURJ is a local chapter of Showing Up for Racial Justice, a national network of groups and individuals organizing white people for racial justice. While IC SURJ is based in Iowa City, it encompasses surrounding municipalities in Johnson and Linn counties, including Coralville, North Liberty, and Cedar Rapids.
 
 Formed in the summer of 2016, the Iowa City SURJ chapter aims to encourage and support white people to act with passion and accountability as part of a multi-racial majority for justice. We endeavor to do this work through community organizing, mobilization, education, and partnerships with other racial justice groups locally and nationally.
 
