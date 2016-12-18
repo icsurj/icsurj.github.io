@@ -1,0 +1,67 @@
+<div>
+    <h2>Books</h2>
+    <ul class="list-unstyled">
+        {% for resource in site.learning-resources %}
+            {% if resource.type == 'book' %}
+                <li>
+                    <h3>{{resource.title}}</h3>
+                    {% if resource.attribution %}
+                        <div class="attribution">by {{resource.attribution}}</div>
+                    {% endif %}
+                    <div>{{resource.content}}</div>
+                    <div>
+                        {% if resource.link %}
+                            <a href="{{resource.link}}" target="_blank" class="btn btn-primary">
+                                View
+                            </a>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+    <h2>Films</h2>
+    <ul class="list-unstyled">
+        {% for resource in site.learning-resources %}
+            {% if resource.type == 'film' %}
+                <li>
+                    <h3>{{resource.title}}</h3>
+                    {% if resource.attribution %}
+                        <div class="attribution">directed by {{resource.attribution}}</div>
+                    {% endif %}
+                    <div>{{resource.content}}</div>
+                    <div>
+                        {% if resource.link %}
+                            <a href="{{resource.link}}" target="_blank" class="btn btn-primary">
+                                View
+                            </a>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+    <h2>Web</h2>
+    <ul class="list-unstyled">
+        {% for resource in site.learning-resources %}
+            {% if resource.type == 'web' %}
+                <li>
+                    <h3>{{resource.title}}</h3>
+                    {% if resource.attribution %}
+                        <div class="attribution">by {{resource.attribution}}</div>
+                    {% endif %}
+                    <div>{{resource.content}}</div>
+                    <div>
+                        {% if resource.link %}
+                            <a href="{{resource.link}}" target="_blank" class="btn btn-primary">
+                                View
+                            </a>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>

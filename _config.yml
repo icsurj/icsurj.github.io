@@ -21,6 +21,7 @@ permalink: /news/:year/:title/
 
 collections:
     - local-organizations
+    - learning-resources
 
 # Build settings
 markdown: kramdown
