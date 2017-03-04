@@ -7,10 +7,6 @@ nav {
         }
     }
 
-    a:hover {
-        text-decoration: none;
-    }
-
     .navbar-toggle {
         background-color: $body-bg-color;
         border-style: none;
@@ -107,6 +103,7 @@ article {
 
 a:hover, a:focus {
     color: $brand-primary;
+    text-decoration: none;
 }
 
 time {

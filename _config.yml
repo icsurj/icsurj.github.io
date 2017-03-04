@@ -17,7 +17,10 @@ email: icsurj@gmail.com
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://icsurj.org" # the base hostname & protocol for your site
-permalink: /news/:year/:title/
+paginate: 5
+paginate_path: "/stay-informed/page:num/"
+permalink: /stay-informed/:year/:title/
+excerpt_separator: <!--more-->
 
 collections:
     - local-organizations
@@ -32,3 +35,6 @@ calendar-api-key: AIzaSyD8omfgUEOnuqN7XSt5jORSwxO20nHtscg
 surj-events-calendar-id: 1rjvm4hdpo0lilmbm6t0rbjarc@group.calendar.google.com
 surj-action-events-calendar-id: gesk21oibrfe5llt3och3h3skg@group.calendar.google.com
 other-events-calendar-id: td1ria9ad91sh327a4lu4vmpi8@group.calendar.google.com
+
+# Plugins
+gems: ['jekyll-paginate']

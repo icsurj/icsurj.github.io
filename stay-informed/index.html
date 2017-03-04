@@ -1,0 +1,55 @@
+---
+layout: default
+title: Stay Informed
+---
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1>IC SURJ Updates</h1>
+                <ul id="posts" class="list-unstyled">
+                    {% for post in paginator.posts %}
+                        <li>
+                            <h2>
+                                {{post.title}}
+                            </h2>
+                            <time datetime="{{post.date | date_to_xmlschema}}">
+                                {{post.date | date: "%B %-d, %Y"}}
+                            </time>
+                            <div class="post-excerpt">
+                                {{post.excerpt}}
+                                <p>[...]</p>
+                            </div>
+                            <a class="btn btn-primary" href="{{post.url | prepend: site.baseurl}}">
+                                Read More
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+                {% if paginator.total_pages > 1 %}
+                    <nav>
+                        <ul class="pager">
+                            {% if paginator.previous_page %}
+                                <li class="previous">
+                                    <a class="btn btn-default" href="{{paginator.previous_page_path}}">
+                                        <span aria-hidden="true">&larr;</span> Newer Posts
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if paginator.next_page %}
+                                <li class="next">
+                                    <a class="btn btn-default" href="{{paginator.next_page_path}}">
+                                        Older Posts <span aria-hidden="true">&rarr;</span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </nav>
+                {% endif %}
+            </div>
+            <div class="col-sm-4">
+                <h1>Related News Sources</h1>
+            </div>
+        </div>
+    </div>
+</article>
