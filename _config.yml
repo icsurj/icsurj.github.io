@@ -25,6 +25,7 @@ excerpt_separator: <!--more-->
 collections:
     - local-organizations
     - learning-resources
+    - informational-resources
 
 # Build settings
 markdown: kramdown

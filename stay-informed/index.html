@@ -6,7 +6,7 @@ title: Stay Informed
     <div class="container">
         <div class="row">
             <div class="col-sm-8">
-                <h1>IC SURJ Updates</h1>
+                <h1>Iowa City SURJ Updates</h1>
                 <ul id="posts" class="list-unstyled">
                     {% for post in paginator.posts %}
                         <li>
@@ -48,7 +48,32 @@ title: Stay Informed
                 {% endif %}
             </div>
             <div class="col-sm-4">
-                <h1>Related News Sources</h1>
+                <h1>Informational Resources</h1>
+
+                <div class="panel-group" id="resources-accordion" role="tablist" aria-multiselectable="true">
+                    {% for resource in site.informational-resources %}
+                        <div class="panel panel-default">
+                            <a role="button" data-toggle="collapse" data-parent="#resources-accordion"
+                                    href="#{{resource.category | downcase | replace: " ", "-"}}-collapse"
+                                    aria-expanded="false"
+                                    aria-controls="{{resource.category | downcase | replace: " ", "-"}}-collapse">
+                                <div class="panel-heading" role="tab"
+                                        id="{{resource.category | downcase | replace: " ", "-"}}-heading">
+                                    <h2 class="panel-title">
+                                        {{resource.category}}
+                                    </h2>
+                                </div>
+                            </a>
+                            <div id="{{resource.category | downcase | replace: " ", "-"}}-collapse"
+                                    class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="{{resource.category | downcase | replace: " ", "-"}}-heading">
+                                <div class="panel-body">
+                                    {{resource.content}}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

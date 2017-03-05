@@ -237,3 +237,9 @@ h3 {
 .modal h2 {
     font-size: 17px;
 }
+
+.panel-default > a > .panel-heading {
+    color: $btn-default-color;
+    background-color: $panel-default-heading-bg;
+    border-color: $panel-default-border;
+}
