@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Learning Resources
+sort-order: 5
 ---
 
 # Learning Resources

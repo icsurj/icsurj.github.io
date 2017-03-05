@@ -55,6 +55,7 @@ nav {
     background-color: $heading-bg-color;
     color: $heading-color;
     font-family: $title-font;
+    font-size: 15px;
     text-transform: uppercase;
 
     li {
@@ -85,11 +86,6 @@ article {
     header {
         color: inherit;
         background-color: inherit;
-        border-bottom: 3px solid $heading-bg-color;
-    }
-
-    h1 {
-        border-style: none;
     }
 
     ul.list-unstyled > li {
@@ -101,14 +97,17 @@ article {
     }
 }
 
+a {
+    color: $link-color;
+}
+
 a:hover, a:focus {
-    color: $brand-primary;
+    color: $link-color;
     text-decoration: none;
 }
 
 time {
     font-style: italic;
-    font-size: 12px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -141,6 +140,8 @@ h3 {
 }
 
 #calendar {
+    font-size: 15px;
+
     .fc-button {
         border-radius: 0;
         background-color: $btn-default-bg;
@@ -235,6 +236,10 @@ h3 {
 }
 
 .modal h2 {
+    font-size: 17px;
+}
+
+.panel-group h2 {
     font-size: 17px;
 }
 

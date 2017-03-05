@@ -34,7 +34,7 @@
             <div id="navbar-dropdown" class="row nav-links collapse">
                 <div class="col-md-10 col-md-offset-1">
                     <ul class="nav navbar-nav">
-                        {% assign sorted_pages = site.pages | sort: "title" %}
+                        {% assign sorted_pages = site.pages | sort: "sort-order" %}
                         {% for page in sorted_pages %}
                             {% if page.title %}
                                 {% unless page.url contains '/page' %}

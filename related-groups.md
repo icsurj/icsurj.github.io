@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Related Groups
+sort-order: 6
 ---
 
 # Related Groups

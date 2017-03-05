@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Us
+sort-order: 1
 ---
 
 # Iowa City SURJ Chapter

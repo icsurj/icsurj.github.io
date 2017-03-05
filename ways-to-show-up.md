@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Ways to Show Up
+sort-order: 3
 ---
 
 # Ways to Show Up
