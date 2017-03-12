@@ -43,6 +43,9 @@ $btn-primary-color: #333333;
 $pager-border-radius: 0;
 $panel-border-radius: 0;
 
+$blockquote-font-size: ($font-size-base);
+$blockquote-border-color: #ffaa61;
+
 @import "bootstrap";
 @import "icon-fonts";
 @import "fullcalendar";
