@@ -11,3 +11,5 @@ category: National Opinion
 - [The Muslim News](http://muslimnews.co.uk/news/americas/){: target="_blank"}
 - [Latin Times](http://www.latintimes.com/news){: target="_blank"}
 - [NewsTaco](http://www.newstaco.com/){: target="_blank"}
+- [The Establishment](https://theestablishment.co/){: target="_blank"}
+- [Bitch Media](https://bitchmedia.org/){: target="_blank"}
