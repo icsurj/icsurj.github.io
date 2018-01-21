@@ -29,7 +29,7 @@ collections:
 
 # Build settings
 markdown: kramdown
-timezone: America/Central
+timezone: America/Chicago
 
 # Calendar settings
 calendar-api-key: AIzaSyD8omfgUEOnuqN7XSt5jORSwxO20nHtscg
@@ -38,4 +38,4 @@ surj-action-events-calendar-id: gesk21oibrfe5llt3och3h3skg@group.calendar.google
 other-events-calendar-id: td1ria9ad91sh327a4lu4vmpi8@group.calendar.google.com
 
 # Plugins
-gems: ['jekyll-paginate']
+plugins: ['jekyll-paginate']
